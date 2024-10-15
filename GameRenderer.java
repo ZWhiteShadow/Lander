@@ -66,6 +66,6 @@ public class GameRenderer {
         CelestialBody currentBody = levelManager.getCurrentBody();
         g2d.drawString("Level: " + levelManager.getCurrentLevel(), 10, 40);
         g2d.drawString("Body: " + currentBody.getName(), 10, 60);
-        g2d.drawString("Gravity: " + String.format("%.2f m/s²", currentBody.getGravity()), 10, 80);
+        g2d.drawString("Gravity: " + String.format("%.2f m/s²", currentBody.getOriginalGravity()), 10, 80);
     }
 }
